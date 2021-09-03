@@ -70,7 +70,7 @@ class Snow {
                 this.sty.opacity = 1.0;
             }
 
-            this.vectorY++;
+            this.vectorY++;//Give the sparkling the gravity
 
             if ( randomInt(0,5) == 1 ) {
                 this.sty.backgroundColor = "#FFF";
