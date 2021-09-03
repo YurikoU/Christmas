@@ -8,6 +8,7 @@ const SNOW_FPS       = 20;
 const TYPE_SNOW      = 0;
 const TYPE_SPARKLING = 1;
 const TYPE_XMAS      = 2;
+const BLOCK_SIZE     = 4;
 
 
 class Snow {
@@ -27,6 +28,7 @@ class Snow {
         this.sty.top      = this.y + "px";
 
         let size;
+        let opacity = randomInt( 5, 10 );
         if ( this.type == TYPE_SNOW ) {
             this.vectorX = randomInt( -1, 1 );
             this.vectorY = randomInt(  3, 5 );
@@ -37,7 +39,6 @@ class Snow {
             size = 8;
         }
         
-        let opacity              = randomInt( 5, 10 );
         this.sty.width           = size + "px";
         this.sty.height          = size + "px";
         this.sty.borderRadius    = "50%";
