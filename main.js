@@ -7,7 +7,6 @@ const SNOW_MAX       = 100;
 const SNOW_FPS       = 20;
 const TYPE_SNOW      = 0;
 const TYPE_SPARKLING = 1;
-const TYPE_XMAS      = 2;
 const BLOCK_SIZE     = 4;
 
 
